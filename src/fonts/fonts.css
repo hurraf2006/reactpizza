@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'pr';
+    src: url(MaximSansRegular.ttf)
+}
+@font-face {
+    font-family: 'pb';
+    src: url(MaximSansBold.ttf)
+}
+@font-face {
+    font-family: 'peb';
+    src: url(MaximSansBold.ttf)
+}
+@font-face {
+    font-family: 'pl';
+    src: url(MaximSansLight.ttf)
+}

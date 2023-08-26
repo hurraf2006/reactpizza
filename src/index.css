@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./fonts/fonts.css); 
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Nunito', Roboto, system-ui, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.App-Back {
+  padding: 20px;
+  background-color: #FFDF8C;;
+}
+.App {
+    padding: 0 70px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.container {
+    max-width: 1225px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo-text h3{
+    color: #181818;
+    font-size: 24px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+}
+.logo-text h4 {
+color: #7B7B7B;
+font-size: 16px;
+
+font-weight: 200;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+nav {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #F6F6F6;
+}
+.cart-button {
+    border-radius: 30px;
+    background-color: #FE5F1E;
+    width: 140px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30;
+    align-items: center;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+.cart-button p {
+    font-size: 16px;
+   
+}
+
+.cart-button span {
+ display: flex; 
+align-items: center;
+gap: 5px;
+}
+.cart-line {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 18px;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  row-gap: 65px;
+}
+.pizza-preview {
+    
+    width: 285px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pizza-preview h2 {
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    
+    letter-spacing: 0.2px;
+}
+.pizza-preview h3 {
+    color: #000;
+font-size: 20px;
+
+font-weight: 700;
+letter-spacing: 0.33px;
+}
+.categories {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.categories ul {
+    list-style: none;
+    display: flex;
+    gap: 9px;
+}
+.categories ul li {
+    border-radius: 30px;
+    background: #ededed;
+    padding: 15px 30px;
+    color: #2C2C2C;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activeCategory  {
+    background: #2C2C2C !important;
+    color: #ededed !important;
+    transition: 0.4s;
+}
+.parameters {
+    background-color: #F3F3F3;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+    border-radius: 10px;
+}
+.pizza_sizes, .bread_types{
+    gap: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.pizza_sizes__size, .bread_types__type {
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    font-family: 'pb';
+} 
+.bread_types__type {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.activeType, .activeSize {
+    background-color: white;
+    transition: 0.4s;
+}
